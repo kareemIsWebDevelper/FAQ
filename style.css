@@ -1,0 +1,54 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%) );
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: white;
+    border-radius: 30px;
+    width: 70vw;
+    height: 75vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#wrapper {
+    position: relative;
+    height: inherit;
+    width: 45%;
+}
+
+.one {position: absolute; z-index:1 ;  width: 800px;left: -80%; top: -30%; }
+.two { position: absolute; z-index:2 ;  width: 500px; left: -30%; top: 10%; }
+.three { position: absolute; z-index:3 ;  width: 300px; left: -50%; top: 30%; }
+
+#container {
+    width: 55%;
+    height: inherit;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header { font-size: 20px;}
+
+.div { display: flex; flex-flow: column; gap: 15px; width: 300px;  font-size: 12px;}
+
+.flip { display: flex; justify-content: space-between; margin-bottom: 10px; font-weight: bold;}
+.flip img { rotate: 180deg;}
+.flip:hover  img  { rotate: 360deg;}
+.flip:hover {  cursor: pointer;}
+.panel { color: grey;}
